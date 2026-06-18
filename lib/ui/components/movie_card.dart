@@ -10,11 +10,14 @@ class MovieCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Colocando o card de movies dentro do Ink permite inserir um InkWell que possui a opção onTap, onde redirecionaremos a página para MoviePage
     return Ink(
       child: InkWell(
         onTap: () => Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => MoviePage(movieId: movie.id)),
+          MaterialPageRoute(
+            builder: (context) => MoviePage(movieId: movie.id),
+          ), // A movie page recebe o id do filme no qual a página abrirá
         ),
         child: Row(
           children: [

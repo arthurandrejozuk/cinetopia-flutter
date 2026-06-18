@@ -16,6 +16,7 @@ class _ReleasesState extends State<Releases> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
+      // Finalizando, chamando o viewmodel
       future: viewmodel.getUpcomingMovies(),
       builder: (context, asyncSnapshot) {
         final movies = asyncSnapshot.data;

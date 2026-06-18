@@ -1,5 +1,5 @@
 import 'package:cinetopia/app/models/movie.dart';
-import 'package:cinetopia/app/services/search_movies_service.dart';
+import 'package:cinetopia/app/services/details_movie_service.dart';
 
 class DetailsMovieViewmodel {
   Future<Movie> getDetailMovie(String id) async {

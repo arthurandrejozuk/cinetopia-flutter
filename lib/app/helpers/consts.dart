@@ -1,5 +1,7 @@
 import 'package:cinetopia/app/api_key.dart';
 
+// Helpers são constantes do projetos, geralmente url ou configurações que serão base para
+
 const String popularMoviesUrl =
     "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1";
 
